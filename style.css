@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  background: #2f4156;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(236,72,153,0.2);
+}
+
+.card h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.card h2 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.gif-placeholder {
+  width: 100%;
+  height: 160px;
+  background: #fce7f3;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  margin-bottom: 16px;
+  border: 1.5px dashed #f9a8d4;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}   
+
+.btn {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #ffffff;
+}
+
+.btn-no {
+  position: relative;
+  transition: top 0.1s, left 0.1s;
+}
+
+.makasii {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+input {
+  margin-bottom: 1rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #000000;
+  background: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  width: 100%;
+  color: #000000;
+}
+
+input:focus {
+  outline: 2px solid #ffffff;
+}
+
+.setup {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.setup label {
+  font-size: 0.85rem;
+  color: #ffffff;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.gif-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#love-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.love-text {
+  position: absolute;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 20px;
+  animation: floatUp 3s linear forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}

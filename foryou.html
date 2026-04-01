@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Love App</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="screen" id="screen">
+
+  <div id="setup-view">
+    <div class="card">
+      <div class="setup">
+        <label>Enter your name</label>
+        <input type="text" id="nama-input" placeholder="Your Name" />
+        <button class="btn" onclick="mulai()">Start</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-view" style="display:none">
+    <div class="card" id="ask-card">
+      <h1 id="greeting">Hai kamu,</h1>
+      <h2>Are u ready to be my girlfriend?</h2>
+
+    <div class="gif-placeholder">
+      <img src="flower.jpg" alt="love" />
+    </div>
+
+      <div class="btn-row">
+        <button class="btn" onclick="yesClick()">Yes</button>
+        <button class="btn btn-no" id="no-btn" onclick="noClick()">No</button>
+      </div>
+    </div>
+
+    <div class="card" id="yes-card" style="display:none">
+      <p class="makasii">Yeyy, u are my girlfriend now ^^ </p>
+      <div class="gif-placeholder">
+      <img src="hug.gif" alt="love" />
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<video autoplay muted loop id="bg-video">
+  <source src="memori.mp4" type="video/mp4">
+</video>
+
+<div id="love-container"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
